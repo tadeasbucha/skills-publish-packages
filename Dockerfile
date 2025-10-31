@@ -1,2 +1,2 @@
-FROM scratch
-CMD ["/bin/sh", "-c", "echo 'It works!'"]
+FROM nginx:1.24-alpine
+COPY . /usr/share/nginx/html
